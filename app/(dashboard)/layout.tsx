@@ -1,14 +1,5 @@
 import Link from 'next/link';
-import {
-  Home,
-  LineChart,
-  Package,
-  Package2,
-  PanelLeft,
-  Settings,
-  ShoppingCart,
-  Users2
-} from 'lucide-react';
+import { Home, LineChart, Package, Package2, PanelLeft, Settings, ShoppingCart, Users2 } from 'lucide-react';
 
 import {
   Breadcrumb,
@@ -20,11 +11,7 @@ import {
 } from '@/components/ui/breadcrumb';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger
-} from '@/components/ui/tooltip';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { Analytics } from '@vercel/analytics/react';
 import { User } from './user';
 import { VercelLogo } from '@/components/icons';
@@ -32,11 +19,7 @@ import Providers from './providers';
 import { NavItem } from './nav-item';
 import { SearchInput } from './search';
 
-export default function DashboardLayout({
-  children
-}: {
-  children: React.ReactNode;
-}) {
+export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   return (
     <Providers>
       <main className="flex min-h-screen w-full flex-col bg-muted/40">
@@ -48,9 +31,7 @@ export default function DashboardLayout({
             <SearchInput />
             <User />
           </header>
-          <main className="grid flex-1 items-start gap-2 p-4 sm:px-6 sm:py-0 md:gap-4 bg-muted/40">
-            {children}
-          </main>
+          <main className="grid flex-1 items-start gap-2 p-4 sm:px-6 sm:py-0 md:gap-4 bg-muted/40">{children}</main>
         </div>
         <Analytics />
       </main>
@@ -63,7 +44,7 @@ function DesktopNav() {
     <aside className="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex">
       <nav className="flex flex-col items-center gap-4 px-2 sm:py-5">
         <Link
-          href="https://vercel.com/templates/next.js/admin-dashboard-tailwind-postgres-react-nextjs"
+          href="https://docs.world.org/world-chain"
           className="group flex h-9 w-9 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:h-8 md:w-8 md:text-base"
         >
           <VercelLogo className="h-3 w-3 transition-all group-hover:scale-110" />
@@ -74,15 +55,15 @@ function DesktopNav() {
           <Home className="h-5 w-5" />
         </NavItem>
 
-        <NavItem href="#" label="Orders">
+        <NavItem href="/pageA" label="PageA">
           <ShoppingCart className="h-5 w-5" />
         </NavItem>
 
-        <NavItem href="/" label="Products">
+        <NavItem href="/pageB" label="PageB">
           <Package className="h-5 w-5" />
         </NavItem>
 
-        <NavItem href="/customers" label="Customers">
+        <NavItem href="/pageC" label="PageC">
           <Users2 className="h-5 w-5" />
         </NavItem>
 
@@ -126,38 +107,23 @@ function MobileNav() {
             <Package2 className="h-5 w-5 transition-all group-hover:scale-110" />
             <span className="sr-only">Vercel</span>
           </Link>
-          <Link
-            href="#"
-            className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
-          >
+          <Link href="#" className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground">
             <Home className="h-5 w-5" />
             Dashboard
           </Link>
-          <Link
-            href="#"
-            className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
-          >
+          <Link href="#" className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground">
             <ShoppingCart className="h-5 w-5" />
-            Orders
+            PageA
           </Link>
-          <Link
-            href="#"
-            className="flex items-center gap-4 px-2.5 text-foreground"
-          >
+          <Link href="#" className="flex items-center gap-4 px-2.5 text-foreground">
             <Package className="h-5 w-5" />
-            Products
+            PageB
           </Link>
-          <Link
-            href="#"
-            className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
-          >
+          <Link href="#" className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground">
             <Users2 className="h-5 w-5" />
-            Customers
+            PageC
           </Link>
-          <Link
-            href="#"
-            className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
-          >
+          <Link href="#" className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground">
             <LineChart className="h-5 w-5" />
             Settings
           </Link>
