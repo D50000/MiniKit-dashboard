@@ -48,10 +48,10 @@ function DesktopNav() {
           className="group flex h-9 w-9 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:h-8 md:w-8 md:text-base"
         >
           <VercelLogo className="h-3 w-3 transition-all group-hover:scale-110" />
-          <span className="sr-only">ABC Inc</span>
+          <span className="sr-only">ABC TEAM</span>
         </Link>
 
-        <NavItem href="#" label="Dashboard">
+        <NavItem href="/analytics" label="Dashboard">
           <Home className="h-5 w-5" />
         </NavItem>
 
@@ -75,7 +75,7 @@ function DesktopNav() {
         <Tooltip>
           <TooltipTrigger asChild>
             <Link
-              href="#"
+              href="/"
               className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
             >
               <Settings className="h-5 w-5" />
@@ -101,13 +101,16 @@ function MobileNav() {
       <SheetContent side="left" className="sm:max-w-xs">
         <nav className="grid gap-6 text-lg font-medium">
           <Link
-            href="#"
+            href="https://docs.world.org/world-chain"
             className="group flex h-10 w-10 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:text-base"
           >
             <Package2 className="h-5 w-5 transition-all group-hover:scale-110" />
-            <span className="sr-only">Vercel</span>
+            <span className="sr-only">ABC TEAM</span>
           </Link>
-          <Link href="/analytics" className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground">
+          <Link
+            href="/analytics"
+            className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
+          >
             <Home className="h-5 w-5" />
             Dashboard
           </Link>

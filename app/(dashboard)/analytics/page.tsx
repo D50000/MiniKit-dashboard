@@ -1,7 +1,13 @@
-export default function Page() {
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+
+export default function Analytics() {
   return (
-    <div>
-       analytics<div>chart</div>
-    </div>
+    <Card>
+      <CardHeader>
+        <CardTitle>Analytics</CardTitle>
+        <CardDescription>View Analytics</CardDescription>
+      </CardHeader>
+      <CardContent></CardContent>
+    </Card>
   );
 }

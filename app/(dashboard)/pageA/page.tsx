@@ -10,7 +10,7 @@ export default function PageA() {  //
   return (
     <Card>
       <CardHeader>
-        <CardTitle>pageA</CardTitle>
+        <CardTitle>PageA</CardTitle>
         <CardDescription>View PageA</CardDescription>
       </CardHeader>
       <CardContent></CardContent>
