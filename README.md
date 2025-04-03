@@ -1,21 +1,43 @@
 # MiniKit-dashboard
+
 MiniApps with MiniKit dashboard template.
 
-## Overview
+## Structure Overview
 
 This is a starter template using the following stack:
 
-- Framework - [Next.js (App Router)](https://nextjs.org)
+- Mini App - [MiniKit-JS SDK](https://docs.world.org/mini-apps/quick-start/installing)
+- Framework - [Next.js 15 (App Router)](https://nextjs.org)
 - Language - [TypeScript](https://www.typescriptlang.org)
-- Auth - [Auth.js](https://authjs.dev)
-- Database - [Postgres](https://vercel.com/postgres)
 - Deployment - [Vercel](https://vercel.com/docs/concepts/next.js/overview)
 - Styling - [Tailwind CSS](https://tailwindcss.com)
 - Components - [Shadcn UI](https://ui.shadcn.com/)
-- Analytics - [Vercel Analytics](https://vercel.com/analytics)
 - Formatting - [Prettier](https://prettier.io)
 
-This template uses the new Next.js App Router. This includes support for enhanced layouts, colocation of components, tests, and styles, component-level data fetching, and more.
+```text
+src/
+│── app/
+│   ├── (dashboard)/           # Pages Directory
+│   │    ├── page.tsx           # Route Pages.tsx
+│   ├── api/                   # Next.js API Routes (Controller Layer)
+│       ├── 1inch/route.ts     # 1inch API
+│       ├── circle/route.ts    # circle API
+│── services/                  # Business Logic (Service Layer)
+│   ├── 1inchService.ts        # 1inch Service
+│   ├── circleService.ts       # circle Service
+│── lib/                       # Libraries
+│   ├── db.ts                  # Mock database data
+│── components/                # Shadcn UI Block
+│   ├── ui                     # GUI Unit
+│── assets/                    # Static data
+│   ├── logo.png               # Image
+│── utils/                     # Tools
+│   ├── format.ts              # Formatter
+│   ├── validator.ts           # Validator
+.
+.
+.
+```
 
 ## Getting Started
 
