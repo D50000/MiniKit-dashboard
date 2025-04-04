@@ -66,15 +66,15 @@ Show us your best Mini Apps! Projects that build and deploy a Mini App using Min
 Qualification Requirements
 
 - ✅ build a Mini App with MiniKit
-- integrate any of the Minikit SDK Commands
-- if your Mini App uses on-chain activity, deploy your contracts to World Chain
+- ✅ integrate any of the Minikit SDK Commands
+- ✅ if your Mini App uses on-chain activity, deploy your contracts to World Chain
 - ✅ your project must not be gambling or chance based
-- proof validation is required and needs to occur in a web backend or smart contract
+- ✅ proof validation is required and needs to occur in a web backend or smart contract
 
 🏊 World Pool Prize ⸺ $2,500
 _Split evenly between all qualifying projects_
 This pool prize is for all projects that build within the World ecosystem (and don't receive another prize from World)!
 Qualification Requirements
 
-- make a good-faith effort to integrate World ID, build a Mini App, and/or build on World Chain
+- ✅ make a good-faith effort to integrate World ID, build a Mini App, and/or build on World Chain
 - ✅ your project must not be gambling or chance based
